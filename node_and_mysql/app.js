@@ -23,7 +23,7 @@ for (let i = 0; i < 500; i++) {
 q = 'INSERT INTO users (email, created_at) VALUES ?';
 connection.query(q, [data], function(error, results) {
     if (error) throw error;
-    console.log(results);
+    //console.log(results);
 });
 
 connection.end();

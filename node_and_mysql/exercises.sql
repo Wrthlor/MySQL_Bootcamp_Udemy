@@ -30,7 +30,7 @@ FROM users
 WHERE email LIKE '%@yahoo.com';
 
 -- Exercise 5
--- Calculate total number of userse for each email host
+-- Calculate total number of users for each email host
 SELECT 
     CASE
         WHEN email LIKE '%@gmail.com' THEN 'gmail'
