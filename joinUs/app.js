@@ -7,6 +7,7 @@ const app = express();
 // Set the view engine to ejs
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended : true }));
+app.use(express.static(__dirname + "/public"));
 
 // Connect to "join_us" database 
 let connection = mysql.createConnection({
